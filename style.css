@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+
+body {
+    background: linear-gradient(270deg, #6c94e4, #b865f0);
+    background-size: 400% 400%;
+
+    -webkit-animation: gradient 30s ease infinite;
+    -moz-animation: gradient 30s ease infinite;
+    animation: gradient 30s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.now{
+    background-color: rgba(255, 199, 115, 0.69);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    padding: 10px;
+    margin: 10px auto 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+}
+.bzu{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.nutrients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+p{
+    font-size: 21px;
+}
+
+.btn{
+    padding: 10px;
+    border: 1px solid black;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 5px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #82eee5;
+    color: #383030;
+    transform: scale(1.05);
+}
+input{
+    margin: 2px;
+    background-color: rgba(239, 138, 25, 0.56);
+    color: #fff;
+    border: 0;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+input:hover{
+    background-color: rgba(130, 238, 229, 0.79);
+    transform: scale(1.05);
+}
+input:focus{
+    outline:none;
+    background-color: rgba(130, 238, 229, 0.79);
+    color: #000;
+    transform: scale(1.05);
+}
+@media (max-width: 800px) {
+    .now{
+        width: 85vw;
+    }
+    .bzu{
+        flex-direction: column;
+    }
+}
