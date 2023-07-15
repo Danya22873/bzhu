@@ -208,10 +208,14 @@ clearBtn.addEventListener("click",()=>{
 
 let openPopup = document.querySelector(".baza"),
     popup = document.querySelector(".overlay"),
-    closePopup = document.querySelector(".close");
+    closePopup = document.querySelector(".close"),
+    body = document.querySelector("body");
+
 openPopup.addEventListener("click",()=>{
-    popup.classList.toggle("active")
+    popup.classList.toggle("active");
+    body.classList.toggle("scrollOff")
 })
 closePopup.addEventListener("click",()=>{
     popup.classList.toggle("active")
+    body.classList.toggle("scrollOff")
 })
