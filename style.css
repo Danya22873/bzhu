@@ -79,8 +79,8 @@ h1{
 }
 
 .btn:hover{
-    background-color: #82eee5;
-    color: #383030;
+    background-color: #000000;
+    color: #ffffff;
     transform: scale(1.05);
 }
 input{
@@ -99,6 +99,40 @@ input{
     transition: ease-in-out 0.2s;
     cursor: pointer;
     font-size: 1.3vw;
+    width: 13vw;
+    text-align: center;
+}
+
+select{
+    text-align: center;
+    margin: 2px;
+    width: 13vw;
+    background-color: rgba(239, 138, 25, 0.56);
+    color: #fff;
+    border: 0;
+    padding: 0.6vw;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    font-size: 1.3vw;
+    appearance: none;
+}
+select:hover{
+    background-color: rgba(130, 238, 229, 0.79);
+    transform: scale(1.05);
+}
+
+select:focus{
+    outline:none;
+    background-color: rgba(130, 238, 229, 0.79);
+    color: #000;
+    transform: scale(1.05);
 }
 input:hover{
     background-color: rgba(130, 238, 229, 0.79);
@@ -111,7 +145,41 @@ input:focus{
     transform: scale(1.05);
 }
 
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    -ms-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.1s;
+    transform: scale(0);
+}
+.active{
+    transform: scale(1);
+}
+.based{
+    width: 50vw;
+    /*height: 50vh;*/
+    background-color: rgb(255, 199, 115);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
 
+}
+ul li{
+    list-style: none;
+    padding: 0.4vw;
+    font-size: 1.3vw;
+}
 @media (max-width: 800px) {
     .now{
         width: 85vw;
@@ -121,14 +189,23 @@ input:focus{
     }
     h1{
         font-size: 7vw;
+        text-align: center;
     }
     p{
         font-size: 5vw;
     }
     input{
         font-size: 4vw;
+        width: 80vw;
+        text-align: center;
+    }
+    select{
+        font-size: 4vw;
+        width: 80vw;
+        text-align: center;
     }
     .btn{
         font-size: 5vw;
+        text-align: center;
     }
 }
